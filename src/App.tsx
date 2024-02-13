@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import YayTobyImg from "./assets/YayToby.jpeg";
 
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
@@ -13,20 +14,21 @@ export default function Page() {
   const getNoButtonText = () => {
     const phrases = [
       "No",
+      "Talaga?",
       "Are you sure?",
       "What if I asked really nicely?",
+      "Bakit?",
       "Pretty please",
-      "With a chocolate rice cake on top",
-      "What about a matcha frostie",
-      "PLEASE POOKIE",
+      "With a chocolate brownie on top",
+      "What about a iced french vanilla latte?",
+      "Or a starbucks?",
+      "PLEASE KR",
       "But :*(",
-      "I am going to die",
-      "Yep im dead",
-      "ok ur talking to nathan's ghost",
-      "please babe",
+      "please bibs",
       ":((((",
       "PRETTY PLEASE",
-      "Estoy muerto",
+
+      "Ano?",
       "No :(",
     ];
 
@@ -37,8 +39,17 @@ export default function Page() {
     <div className="-mt-16 flex h-screen flex-col items-center justify-center">
       {yesPressed ? (
         <>
-          <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-          <div className="my-4 text-4xl font-bold">WOOOOOO!!! I love you pookie!! ;))</div>
+          <img src={YayTobyImg} className="w-96" />
+          <div className="my-4 text-4xl font-bold justify-center">
+            WOOOOOO!!!😍 It's a date 👩🏻‍❤️👨🏻 <br />
+            <span>at </span>
+            <a
+              href="https://www.theavenuecinema.com/whatson/movie/showtimes/madame-web"
+              className="underline"
+            >
+              Avenue Cinema for 7:45pm!
+            </a>
+          </div>
         </>
       ) : (
         <>
@@ -46,7 +57,9 @@ export default function Page() {
             className="h-[200px]"
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
           />
-          <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
+          <h1 className="my-4 text-4xl">
+            Mrs Karen Rose Hermoso-Troyo 🌹, will you be my Valentine? ❤️
+          </h1>
           <div className="flex items-center">
             <button
               className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
