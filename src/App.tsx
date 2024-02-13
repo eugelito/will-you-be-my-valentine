@@ -40,7 +40,7 @@ export default function Page() {
       {yesPressed ? (
         <>
           <img src={YayTobyImg} className="w-96" />
-          <div className="my-4 text-4xl font-bold justify-center">
+          <div className="my-4 text-4xl font-bold justify-center px-3.5">
             WOOOOOO!!!😍 It's a date 👩🏻‍❤️👨🏻 <br />
             <span>at </span>
             <a
@@ -57,7 +57,7 @@ export default function Page() {
             className="h-[200px]"
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
           />
-          <h1 className="my-4 text-4xl">
+          <h1 className="my-4 text-4xl px-3.5">
             Mrs Karen Rose Hermoso-Troyo 🌹, will you be my Valentine? ❤️
           </h1>
           <div className="flex items-center">
